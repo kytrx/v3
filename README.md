@@ -7,10 +7,9 @@
 - DEBIAN 10
 
 ### FITUR TAMBAHAN
-- Tambah Swap 1GiB
+- Tambah Swap 1GB
 - Pemasangan yang dinamis
 - Tuning profile pada server
-- Xray Core by [@YSSHstore](https://github.com/YSSHstore)
 - Penambahan fail2ban
 - Auto block sebagian ads indo by default
 - Auto clear log per 3 menit
@@ -25,14 +24,14 @@
 - SHADOWSOCKS GRPC 443
 - VLESS WS 443
 - VLESS GRPC 443
-- VLESS NONTLS 80
+- VLESS NONE TLS 80
 - VMESS WS 443
 - VMESS GRPC 443
-- VMESS NONTLS 80
+- VMESS NONE TLS 80
 - SSH WS / TLS 443
-- SSH NON TLS 8880
+- SSH NONE TLS 8880
 - OVPN SSL/TCP 1194
-- SLOWDNS 5300
+- SLOWDNS 53, 5300
 ```
 
 ### SETTING CLOUDFLARE
@@ -43,16 +42,4 @@
 - WEBSOCKET : ON
 - Always Use HTTPS : OFF
 - UNDER ATTACK MODE : OFF
-```
-### Auther
-```
-```
-OWNER :<a href="https://t.me/YSSHstore" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-```
-```
-###IZIN SCRIPT
-```
-```
-Izin Sc PM aja :<a href="https://t.me/YSSHstore" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-```
 ```
