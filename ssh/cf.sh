@@ -6,11 +6,11 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-DOMAIN=vpn-store.biz.id
+DOMAIN=gabutvpn.shop
 sub=$(</dev/urandom tr -dc a-x1-9 | head -c5 | tr -d '\r' | tr -d '\r\n')
-SUB_DOMAIN=${sub}.vpn-store.biz.id
-CF_ID=ysshvpn@gmail.com
-CF_KEY=adaba81589e82448fa7166808ce9f1abd44ff
+SUB_DOMAIN=${sub}.gabutvpn.shop
+CF_ID=paoandest@gmail.com
+CF_KEY=1d158d0efc4eef787222cefff0b6d20981462
 set -euo pipefail
 IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
