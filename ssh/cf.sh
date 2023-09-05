@@ -6,7 +6,7 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-read -rp "Sub Domain (Contoh: alvi): " -e sub
+read -rp "Sub Domain (Contoh: yogz): " -e sub
 DOMAIN=vvipp.my.id
 SUB_DOMAIN=${sub}.vvipp.my.id
 CF_ID=Adigemether@gmail.com
