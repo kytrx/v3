@@ -1,13 +1,13 @@
 #!/bin/sh
-REPOS="https://abc.xcodehoster.com/"
+REPOS="https://raw.githubusercontent.com/kytrx/main/"
 ns_domain_cloudflare() {
-	DOMAIN="rstore-vpn.cloud"
+	DOMAIN="sloowdns.my.id"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}."rstore-vpn.cloud"
+	SUB_DOMAIN=${SUB}."sloowdns.my.id"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
-	CF_ID=ridwanstoreaws@gmail.com
-        CF_KEY=4ecfe9035f4e6e60829e519bd5ee17d66954f
+	CF_ID=paoandest@gmail.com
+        CF_KEY=1d158d0efc4eef787222cefff0b6d20981462
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
