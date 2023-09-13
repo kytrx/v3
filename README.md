@@ -7,6 +7,7 @@
 - DEBIAN 10
 
 ### FITUR TAMBAHAN
+- Simple Bot Telegram
 - Atur Limit Quota & Ip Per Akun
 - SlowDNS & SSH UDP
 - Xray Core by [@YSSHstore](https://t.me/YSSHstore)
