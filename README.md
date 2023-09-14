@@ -6,14 +6,6 @@
 - UBUNTU 20.04.05
 - DEBIAN 10
 
-### FITUR TAMBAHAN
-- Simple Bot Telegram
-- Atur Limit Quota & Ip Per Akun
-- SlowDNS & SSH UDP
-- Xray Core by [@YSSHstore](https://t.me/YSSHstore)
-- Penambahan fail2ban
-- Auto block sebagian ads indo by default
-
 ### PORT INFO
 ```
 - TROJAN WS 443
