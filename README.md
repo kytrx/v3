@@ -45,4 +45,4 @@
 ### LICENSE
 Repository ini dilindungi oleh lisensi [PAK POLISI](https://mit-license.org/)
 
-BY: YogzVPN | & Team 【YSSH】
+BY: YogzVPN | & Team 【KYT】
