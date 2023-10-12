@@ -9,7 +9,7 @@ cekcek=$(echo -e "$mulog" | grep $user | wc -l);
 if [[ $cekcek -gt $iplimit ]]; then
 userdel -f -r $user
 nais=3
-echo -e "$pup\nRemoved User: $Login Login: $cekcek IP Max: $iplimit IP \n" >> /etc/funny/log/ssh/ssh.log
+echo -e "$pup\nRemoved User: $Login Login: $cekcek IP Max: $iplimit IP \n" >> /etc/kyt/log/ssh/ssh.log
 else
 echo > /dev/null
 fi
