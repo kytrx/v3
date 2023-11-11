@@ -7,7 +7,7 @@ TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="
 <code>────────────────────</code>
-<b>  ⚠️ NOTIF LIMIT IP ⚠️</b>
+<b> ⚠️ MULTILOGIN DETECTED ⚠️</b>
 <code>────────────────────</code>
 <code>Username  : </code><code>$user</code>
 <code>Limit Ip  : </code><code>$jum2</code>
