@@ -1,5 +1,5 @@
 ORDER SCRIPT [YOGZ VPN STORE]
-(https://wa.me/6281215360549)
+(https://mit-license.org/)
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
