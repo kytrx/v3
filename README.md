@@ -1,9 +1,6 @@
-ORDER SCRIPT [YOGZ VPN STORE]
-(https://mit-license.org/)
-
-### TESTED ON OS 
+### OS SUPPORT
 - UBUNTU 20.04.05
-- DEBIAN 10
+- DEBIAN 10 ( Recommended)
 
 ### PORT INFO
 ```
