@@ -1,5 +1,6 @@
-# `INSTAL SCRIPT` 
-<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget https://sc.vip-anuku.xyz/setup.sh && chmod +x setup.sh && ./setup.sh</pre></code>
+ORDER SCRIPT [YOGZ VPN STORE]
+Whatsapp (https://wa.me/6281215360549)
+Telegram (https://t.me/YSSHstore)
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
