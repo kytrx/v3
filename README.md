@@ -1,6 +1,5 @@
 ORDER SCRIPT [YOGZ VPN STORE]
-Whatsapp (https://wa.me/6281215360549)
-Telegram (https://t.me/YSSHstore)
+(https://wa.me/6281215360549)
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
