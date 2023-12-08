@@ -12,15 +12,15 @@ chmod +x /etc/xray/vless
 chmod +x /etc/xray/trojan
 chmod +x /etc/xray/shadowsocks
 systemctl daemon-reload
-systemctl enable limitvmess
-systemctl enable limitvless
-systemctl enable limittrojan
-systemctl enable limitshadowsocks
-systemctl start limitvmess
-systemctl start limitvless
-systemctl start limittrojan
-systemctl start limitshadowsocks
-systemctl restart limitvmess
-systemctl restart limitvless
-systemctl restart limittrojan
-systemctl restart limitshadowsocks
+systemctl enable --now limitvmess
+systemctl enable --now limitvless
+systemctl enable --now limittrojan
+systemctl enable --now limitshadowsocks
+# systemctl start limitvmess
+# systemctl start limitvless
+# systemctl start limittrojan
+# systemctl start limitshadowsocks
+# systemctl restart limitvmess
+# systemctl restart limitvless
+# systemctl restart limittrojan
+# systemctl restart limitshadowsocks
