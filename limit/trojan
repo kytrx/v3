@@ -6,7 +6,7 @@ TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="
 <code>────────────────────</code>
-<b>⚠️NOTIF QUOTA HABIS XRAY TROJAN⚠️</b>
+<b>⚠️ ACCOUNT LIMIT BANDWIDTH ⚠️</b>
 <code>────────────────────</code>
 <code>Username : </code><code>$user</code>
 <code>Quota    : </code><code>$total2 GB</code>
@@ -31,7 +31,7 @@ function con() {
 
 
   while true; do
-  sleep 30
+  sleep 5
   data=($(cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq))
   if [[ ! -e /etc/limit/trojan ]]; then
   mkdir -p /etc/limit/trojan
@@ -63,7 +63,7 @@ done
 # Check ur Account
 for user in ${data[@]}
   do
-    if [ -e /etc/limit/trojan/${user} ]; then
+    if [ -e /etc/trojan/${user} ]; then
       checkLimit=$(cat /etc/limit/trojan/quota/${user});
       if [[ ${#checkLimit} -gt 1 ]]; then
       if [ -e /etc/limit/trojan/${user} ]; then

@@ -6,7 +6,7 @@ TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="
 <code>────────────────────</code>
-<b>⚠️NOTIF QUOTA HABIS XRAY VMESS⚠️</b>
+<b>⚠️ ACCOUNT LIMIT BANDWIDTH ⚠️</b>
 <code>────────────────────</code>
 <code>Username : </code><code>$user</code>
 <code>Quota    : </code><code>$total2 GB</code>
@@ -63,7 +63,7 @@ done
 # Check ur Account
 for user in ${data[@]}
   do
-    if [ -e /etc/limit/shadowsocks/${user} ]; then
+    if [ -e /etc/shadowsocks/${user} ]; then
       checkLimit=$(cat /etc/shadowsocks/${user});
       if [[ ${#checkLimit} -gt 1 ]]; then
       if [ -e /etc/limit/shadowsocks/${user} ]; then
