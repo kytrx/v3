@@ -115,7 +115,7 @@ function cektrojan(){
 }
 function vmess(){
 while true; do
-sleep 30
+sleep 5
 cekvmess
 data=($(cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq))
 for user in ${data[@]}
@@ -151,7 +151,7 @@ done
 }
 function vless(){
 while true; do
-sleep 30
+sleep 5
 cekvless
 data=($(cat /etc/xray/config.json | grep '^#&' | cut -d ' ' -f 2 | sort | uniq))
 for user in ${data[@]}
@@ -187,7 +187,7 @@ done
 }
 function trojan(){
 while true; do
-sleep 30
+sleep 5
 cektrojan
 data=($(cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq))
 for user in ${data[@]}
