@@ -64,7 +64,7 @@ done
 for user in ${data[@]}
   do
     if [ -e /etc/trojan/${user} ]; then
-      checkLimit=$(cat /etc/limit/trojan/quota/${user});
+      checkLimit=$(cat /etc/trojan/${user});
       if [[ ${#checkLimit} -gt 1 ]]; then
       if [ -e /etc/limit/trojan/${user} ]; then
       Usage=$(cat /etc/limit/trojan/${user});

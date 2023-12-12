@@ -64,7 +64,7 @@ done
 for user in ${data[@]}
   do
     if [ -e /etc/vmess/${user} ]; then
-      checkLimit=$(cat /etc/limit/vmess/quota/${user});
+      checkLimit=$(cat /etc/vmess/${user});
       if [[ ${#checkLimit} -gt 1 ]]; then
       if [ -e /etc/limit/vmess/${user} ]; then
       Usage=$(cat /etc/limit/vmess/${user});
