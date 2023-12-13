@@ -6,11 +6,10 @@ TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="
 <code>────────────────────</code>
-<b>⚠️ ACCOUNT LIMIT BANDWIDTH ⚠️</b>
+<b>⚠️NOTIF QUOTA HABIS⚠️</b>
 <code>────────────────────</code>
-<code>Username : </code><code>$user</code>
-<code>Quota    : </code><code>$total2 GB</code>
-<code>Usage    : </code><code>$total GB</code>
+<code>Username  : </code><code>$user</code>
+<code>Usage     : </code><code>$total</code>
 <code>────────────────────</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
@@ -69,8 +68,6 @@ for user in ${data[@]}
       if [ -e /etc/limit/trojan/${user} ]; then
       Usage=$(cat /etc/limit/trojan/${user});
       if [[ ${Usage} -gt ${checkLimit} ]]; then
-      total=$(con ${Usage})
-      total2=$(con ${checkLimit})
       exp=$(grep -w "^#! $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
       sed -i "/^#! $user $exp/,/^},{/d" /etc/xray/config.json
       sed -i "/^#! $user $exp/d" /etc/trojan/.trojan.db

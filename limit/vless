@@ -8,9 +8,9 @@ TEXT="
 <code>────────────────────</code>
 <b>⚠️ ACCOUNT LIMIT BANDWIDTH ⚠️</b>
 <code>────────────────────</code>
-<code>Username : </code><code>$user</code>
-<code>Quota    : </code><code>$total2 GB</code>
-<code>Usage    : </code><code>$total GB</code>
+<code>Username    : </code><code>$user</code>
+<code>Quota Limit : </code><code>$total2 GB</code>
+<code>Quota Usage : </code><code>$total GB</code>
 <code>────────────────────</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
@@ -28,7 +28,6 @@ function con() {
         echo "$(( (bytes + 1073741823)/1073741824 ))GB"
     fi
 }
-
 
 
   while true; do
