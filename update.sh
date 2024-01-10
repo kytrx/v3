@@ -1,9 +1,4 @@
 #!/bin/bash
-cd /usr/local/
-rm -rf sbin
-rm -rf /usr/bin/enc
-cd
-mkdir /usr/local/sbin
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
@@ -35,12 +30,9 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/fttunnel7/wiz4rd/MONSTER/limit/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/fttunnel7/wiz4rd/MONSTER/epro/epro" ; chmod +x /usr/bin/enc
-    7z e -paskykenza123 menu.zip
+    wget https://raw.githubusercontent.com/kytrx/v3/main/menu/menu.zip
     unzip menu.zip
     chmod +x menu/*
-    enc menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
     rm -rf menu.zip
