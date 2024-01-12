@@ -7,19 +7,19 @@ TEXT="
 <code>────────────────────</code>
 <b>⚠️ NOTIF MULTI LOGIN SSH ⚠️</b>
 <code>────────────────────</code>
-<code>Username   l: </code><code>$user</code>
-<code>Limit Ip  : </code><code>$iplimit</code>
-<code>Ip.login  : </code><code>$cekcek</code>
-<code>Akun Lock : </code><code>15 Minutes</code>
+<code>Username : </code><code>$user</code>
+<code>Limit IP : </code><code>$iplimit</code>
+<code>Login IP : </code><code>$cekcek</code>
+<code>Locked   : </code><code>15 Minutes</code>
 <code>────────────────────</code>
-" 
-curl -s --max-time 10 -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
-mulog=$(fvssh)
+mulog=$(mesinssh)
 data=( `ls /etc/kyt/limit/ssh/ip`);
 for user in "${data[@]}"
 do
-iplimit=$(cat /etc/xray/limit/ssh/ip/$user)
+iplimit=$(cat /etc/kyt/limit/ssh/ip/$user)
 cekcek=$(echo -e "$mulog" | grep $user | wc -l);
 if [[ $cekcek -gt $iplimit ]]; then
 egrep "^$user" /etc/passwd >/dev/null
