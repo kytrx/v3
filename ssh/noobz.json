@@ -5,8 +5,8 @@
 	"tcp_ssl": [
 		443
 	],
-	"ssl_cert": "/etc/noobzvpns/cert.pem",
-	"ssl_key": "/etc/noobzvpns/key.pem",
+	"ssl_cert": "/etc/xray/cert.pem",
+	"ssl_key": "/etc/xray/key.pem",
 	"ssl_version": "AUTO",
 	"conn_timeout": 60,
 	"dns_resolver": "/etc/resolv.conf",
